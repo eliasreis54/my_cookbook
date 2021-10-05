@@ -10,6 +10,9 @@ const DUMMY_DATA = [
       'A medida de tudo é a lata de milho',
       'A massa fica super mole, é normal. Fica um bolo bem úmido',
     ],
+    images: [
+      'https://content.paodeacucar.com/wp-content/uploads/2018/06/bolo-de-milho-capa.jpg',
+    ],
     steps: [
       const RecipeStep(
         name: 'Ingredientes',
@@ -41,6 +44,9 @@ const DUMMY_DATA = [
     name: 'Bolo de cenoura',
     description:
         'Bolo de cenoura com cobertura de chocolate, perfeito para tomar aquele café da tarde',
+    images: [
+      'https://receitasbimby.com/wp-content/uploads/2013/03/001.jpg',
+    ],
     steps: [
       const RecipeStep(
         name: 'Ingredientes',
