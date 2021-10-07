@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_cookbook/models/recipe.dart';
+import 'package:my_cookbook/ui/widgets/list_image.dart';
 
 class SingleRecipe extends StatelessWidget {
   final Recipe recipe;
@@ -18,9 +19,12 @@ class SingleRecipe extends StatelessWidget {
         children: [
           Hero(
             tag: recipe.name,
-            child: ClipRRect(
-              child: Image.network(recipe.images.first),
+            child: ImageList(
+              imageList: recipe.images,
             ),
+          ),
+          Expanded(
+            child: null,
           ),
         ],
       ),
