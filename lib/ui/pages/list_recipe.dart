@@ -19,9 +19,7 @@ class ListRecipe extends StatelessWidget {
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) {
-                    return SingleRecipe(recipe: DUMMY_DATA[index]);
-                  },
+                  builder: (_) => SingleRecipe(recipe: DUMMY_DATA[index]),
                 ),
               );
             },

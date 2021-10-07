@@ -12,6 +12,7 @@ const DUMMY_DATA = [
     ],
     images: [
       'https://content.paodeacucar.com/wp-content/uploads/2018/06/bolo-de-milho-capa.jpg',
+      'https://img.cybercook.com.br/receitas/455/bolo-cremoso-de-milho-sem-lactose.jpeg',
     ],
     steps: [
       const RecipeStep(
@@ -46,6 +47,7 @@ const DUMMY_DATA = [
         'Bolo de cenoura com cobertura de chocolate, perfeito para tomar aquele café da tarde',
     images: [
       'https://receitasbimby.com/wp-content/uploads/2013/03/001.jpg',
+      'https://3.bp.blogspot.com/-CpQLIP8mCeE/VkOkPcghApI/AAAAAAAASAM/Ro5GriKqgPI/s1600/IMG_4263.JPG',
     ],
     steps: [
       const RecipeStep(
