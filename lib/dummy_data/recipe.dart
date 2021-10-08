@@ -3,6 +3,39 @@ import 'package:my_cookbook/models/recipe_step.dart';
 
 const DUMMY_DATA = [
   const Recipe(
+    name: 'Pão de queijo',
+    steps: [
+      RecipeStep(
+        name: 'Ingredientes',
+        tasks: [
+          '800 g de polvilho azedo',
+          '1 xícara de água',
+          '1 xícara de leite',
+          '1/2 xícara de óleo',
+          '2 ovos',
+          '100 g de queijo parmesão ralado',
+          'sal a gosto',
+        ],
+      ),
+      RecipeStep(
+        name: 'Modo de Preparo',
+        tasks: [
+          'Em uma panela, ferva a água e acrescente o leite, o óleo e o sal.',
+          'Adicione o polvilho aos poucos até dar liga. Pode ser que você não precise usar os 800g, então coloque devagar e sove a massa até soltar da mão: esse é o ponto.',
+          'Quando a massa estiver morna, acrescente o queijo parmesão, os ovos e misture bem',
+          'Unte as mãos e enrole bolinhas de 2 cm de diâmetro.',
+          'Disponha as bolinhas em uma assadeira untada com óleo, deixando um espaço entre elas.',
+          'Asse em forno médio (180º C), preaquecido, por cerca de 40 minutos.',
+        ],
+      ),
+    ],
+    images: [
+      'pao_de_queijo1.jpeg',
+      'pao_de_queijo2.jpeg',
+    ],
+    description: '',
+  ),
+  const Recipe(
     name: 'Bolo de milho',
     description:
         'Bolo de milho, feito com milho enlatado, fácil preparo e sabor maravilhoso',
@@ -11,8 +44,8 @@ const DUMMY_DATA = [
       'A massa fica super mole, é normal. Fica um bolo bem úmido',
     ],
     images: [
-      'https://content.paodeacucar.com/wp-content/uploads/2018/06/bolo-de-milho-capa.jpg',
-      'https://img.cybercook.com.br/receitas/455/bolo-cremoso-de-milho-sem-lactose.jpeg',
+      'bolo_de_milho1.jpeg',
+      'bolo_de_milho2.jpeg',
     ],
     steps: [
       const RecipeStep(
@@ -46,8 +79,8 @@ const DUMMY_DATA = [
     description:
         'Bolo de cenoura com cobertura de chocolate, perfeito para tomar aquele café da tarde',
     images: [
-      'https://receitasbimby.com/wp-content/uploads/2013/03/001.jpg',
-      'https://3.bp.blogspot.com/-CpQLIP8mCeE/VkOkPcghApI/AAAAAAAASAM/Ro5GriKqgPI/s1600/IMG_4263.JPG',
+      'bolo_de_cenoura1.jpeg',
+      'bolo_de_cenoura2.jpeg',
     ],
     steps: [
       const RecipeStep(

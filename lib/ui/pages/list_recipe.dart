@@ -10,7 +10,10 @@ class ListRecipe extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My cookbook list'),
+        title: Text(
+          'My cookbook list',
+          style: Theme.of(context).textTheme.headline6,
+        ),
       ),
       body: ListView.builder(
         itemCount: DUMMY_DATA.length,
@@ -33,10 +36,14 @@ class ListRecipe extends StatelessWidget {
                     tag: DUMMY_DATA[index].name,
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(16),
-                      child: Image.network(
-                        DUMMY_DATA[index].images.first,
-                        fit: BoxFit.contain,
-                        scale: 0.5,
+                      child: Container(
+                        height: 200,
+                        width: double.maxFinite,
+                        child: Image.asset(
+                          'assets/${DUMMY_DATA[index].images.first}',
+                          fit: BoxFit.fitWidth,
+                          scale: 1,
+                        ),
                       ),
                     ),
                   ),
