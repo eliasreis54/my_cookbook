@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_cookbook/theme/colors.dart';
 import 'package:my_cookbook/ui/pages/list_recipe.dart';
 
 void main() {
@@ -12,7 +13,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'My cookbook',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        iconTheme: IconThemeData(
+          color: CustomColors.secondaryColor,
+        ),
+        primaryIconTheme: IconThemeData(
+          color: CustomColors.secondaryColor,
+        ),
+        textTheme: TextTheme(
+          headline6: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        primaryColor: CustomColors.primaryColor,
+        colorScheme: ColorScheme.light(
+          primary: Color(0xFFFABC3C),
+        ),
       ),
       home: ListRecipe(),
     );

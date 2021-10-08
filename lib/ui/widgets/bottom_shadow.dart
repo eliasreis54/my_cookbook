@@ -8,7 +8,7 @@ class BottomShadow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 210,
+      height: 200,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(16)),
         gradient: LinearGradient(

@@ -42,36 +42,39 @@ class _ImageListState extends State<ImageList> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 200,
-      child: Row(
-        children: [
-          GestureDetector(
-            onTap: goToPreviousImage,
-            child: Container(
-              color: Colors.transparent,
-              height: double.maxFinite,
-              child: Icon(Icons.arrow_back),
-            ),
-          ),
-          Expanded(
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(16),
-              child: Image.network(
-                widget.imageList[initialImageIndex],
-                fit: BoxFit.cover,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        height: 200,
+        child: Row(
+          children: [
+            GestureDetector(
+              onTap: goToPreviousImage,
+              child: Container(
+                color: Colors.transparent,
+                height: double.maxFinite,
+                child: Icon(Icons.arrow_back),
               ),
             ),
-          ),
-          GestureDetector(
-            onTap: goToNextImage,
-            child: Container(
-              color: Colors.transparent,
-              height: double.maxFinite,
-              child: Icon(Icons.arrow_forward),
+            Expanded(
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(16),
+                child: Image.asset(
+                  'assets/${widget.imageList[initialImageIndex]}',
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
-          ),
-        ],
+            GestureDetector(
+              onTap: goToNextImage,
+              child: Container(
+                color: Colors.transparent,
+                height: double.maxFinite,
+                child: Icon(Icons.arrow_forward),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
