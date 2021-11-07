@@ -14,4 +14,20 @@ class Recipe {
     this.aditionalInfo = const [],
     required this.steps,
   });
+
+  Recipe copyWith({
+    String? name,
+    String? description,
+    List<String>? images,
+    List<String>? aditionalInfo,
+    List<RecipeStep>? steps,
+  }) {
+    return Recipe(
+      name: name ?? this.name,
+      description: description ?? this.description,
+      images: images ?? this.images,
+      aditionalInfo: aditionalInfo ?? this.aditionalInfo,
+      steps: steps ?? this.steps,
+    );
+  }
 }
